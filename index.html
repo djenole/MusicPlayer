@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lan="EN">
+    <head>
+        <meta chartset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="./assets/css/style.css">
+
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+        <title> Music Player </title>
+    </head>
+
+    <body>
+        <div class="music-player">
+            <div class="music-top-icons">
+                <div class="arrow-left">
+                    <i class='bx bx-left-arrow-alt'></i>
+                </div>
+                <p class="duration">Playing Now</p>
+                <div class="music-playqueue">
+                    <i class='bx bxs-playlist'></i>
+                </div>
+            </div>
+
+            <audio id="sound" src="./assets/sounds/DK47-Sem_final_feliz.mp3"></audio>
+
+            <div class="recorder-music">
+                <div class="music-album-photo">
+                    <img src="./assets/images/o_contador_de_historias.jpg" alt="">
+                </div>
+                <div class="arm-wrapper">
+                    <div class="arm">
+                        <img src="./assets/images/recorder-player-arm.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="music-detail">
+                <h2>Sem final feliz</h2>
+                <p>DK47</p>
+            </div>
+
+            <div class="music-options">
+                <div class="like-switch">
+                    <i class='bx bxs-heart' id="like-icon"></i>
+                </div>
+                <div class="volume-wrapper">
+                    <input type="range" name="volume" id="volume" min="0" max="1" step="0.05" value="1">
+                    <i class='bx bxs-volume-full' id="volume-icon"></i>
+                </div>
+            </div>
+
+            <div class="play-timeline">
+                <div class="time">
+                    <span class="time-current">00:00</span> <span class="time-duration">00:00</span>
+                </div>
+                <div class="timeline-bar">
+                    <input type="range" min="0" max="0">
+                </div>
+            </div>
+
+            <div class="music-changer">
+                <div class="prev">
+                    <i class='bx bx-skip-previous'></i>
+                </div>
+                <div class="pause">
+                    <i class='bx bx-play'></i>
+                </div>
+                <div class="next">
+                    <i class='bx bx-skip-next'></i>
+                </div>
+            </div>
+        </div>
+
+        <script src="./assets/JavaScript/main.js" type="module"></script>
+    </body>
+</html>
